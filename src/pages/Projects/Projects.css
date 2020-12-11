@@ -1,0 +1,22 @@
+.projects-pic-container {
+  background-color: rgb(10, 10, 66);
+  height: 1622px;
+  width: 16%;
+  border-style: solid;
+  float: left;
+  margin-top: -24px;
+}
+
+.projects-display-text {
+  color: rgb(209, 218, 219);
+  text-align: center;
+}
+
+.project-container {
+  background-color: rgb(10, 10, 66);
+  height: 1622px;
+  width: 84%;
+  margin-top: -24px;
+  border-style: solid;
+  float: right
+}

@@ -1,0 +1,14 @@
+.pic-container {
+  background-color:rgb(10, 10, 66);
+  height: 550px;
+  width: 16%;
+  border-style: solid;
+  float: left;
+  margin-top: -24px;
+}
+
+.display-text {
+  color: rgb(209, 218, 219);
+  text-align: justify;
+  width: 200px;
+}
