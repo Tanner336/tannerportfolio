@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route,
 } from "react-router-dom";
@@ -15,9 +15,9 @@ class BootstrapNavbar extends React.Component {
       <div>
         <div className="row">
           <div className="col-md-12">
-            <Router>
+            <BrowserRouter basename="/">
               <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-                <Navbar.Brand href="/">Tanner Cook Portfolio</Navbar.Brand>
+                <Navbar.Brand href="/tannerportfolio">Tanner Cook Portfolio</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
@@ -39,7 +39,7 @@ class BootstrapNavbar extends React.Component {
                   <Projects />
                 </Route>
               </Switch>
-            </Router>
+            </BrowserRouter>
           </div>
         </div>
       </div>
