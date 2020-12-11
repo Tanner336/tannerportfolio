@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tannerportfolio/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/tannerportfolio/static/js/main.714a7b1e.chunk.js",
+    "main.js.map": "/tannerportfolio/static/js/main.714a7b1e.chunk.js.map",
+    "runtime-main.js": "/tannerportfolio/static/js/runtime-main.b9fcfbe2.js",
+    "runtime-main.js.map": "/tannerportfolio/static/js/runtime-main.b9fcfbe2.js.map",
+    "static/js/2.df1629dd.chunk.js": "/tannerportfolio/static/js/2.df1629dd.chunk.js",
+    "static/js/2.df1629dd.chunk.js.map": "/tannerportfolio/static/js/2.df1629dd.chunk.js.map",
+    "static/js/3.f201432f.chunk.js": "/tannerportfolio/static/js/3.f201432f.chunk.js",
+    "static/js/3.f201432f.chunk.js.map": "/tannerportfolio/static/js/3.f201432f.chunk.js.map",
+    "index.html": "/tannerportfolio/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/tannerportfolio/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.df1629dd.chunk.js.LICENSE.txt": "/tannerportfolio/static/js/2.df1629dd.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/tannerportfolio/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9fcfbe2.js",
+    "static/js/2.df1629dd.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.714a7b1e.chunk.js"
+  ]
+}
