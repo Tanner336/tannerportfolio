@@ -15,7 +15,7 @@ class BootstrapNavbar extends React.Component {
       <div>
         <div className="row">
           <div className="col-md-12">
-            <HashRouter basename="/">
+            <HashRouter>
               <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
                 <Navbar.Brand href="/tannerportfolio">Tanner Cook Portfolio</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
