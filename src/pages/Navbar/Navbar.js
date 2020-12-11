@@ -29,13 +29,13 @@ class BootstrapNavbar extends React.Component {
               </Navbar>
               <br />
               <Switch>
-                <Route exact path="/">
+                <Route exact path="/tannerportfolio">
                   <Display />
                 </Route>
-                <Route exact path="/">
+                <Route exact path="/tannerportfolio">
                   <Display />
                 </Route>
-                <Route path="/projects">
+                <Route path="/tannerportfolio/projects">
                   <Projects />
                 </Route>
               </Switch>
