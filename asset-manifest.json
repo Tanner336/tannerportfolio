@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tannerportfolio/static/css/main.4010df3f.chunk.css",
-    "main.js": "/tannerportfolio/static/js/main.988d49ff.chunk.js",
-    "main.js.map": "/tannerportfolio/static/js/main.988d49ff.chunk.js.map",
+    "main.js": "/tannerportfolio/static/js/main.006343ef.chunk.js",
+    "main.js.map": "/tannerportfolio/static/js/main.006343ef.chunk.js.map",
     "runtime-main.js": "/tannerportfolio/static/js/runtime-main.84215992.js",
     "runtime-main.js.map": "/tannerportfolio/static/js/runtime-main.84215992.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/tannerportfolio/static/css/2.20aa2d7b.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.cc849718.chunk.js",
     "static/css/main.4010df3f.chunk.css",
-    "static/js/main.988d49ff.chunk.js"
+    "static/js/main.006343ef.chunk.js"
   ]
 }
