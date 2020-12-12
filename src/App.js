@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-  HashRouter,
+  BrowserRouter,
   Switch,
   Route,
 } from "react-router-dom";
@@ -12,13 +12,12 @@ import Projects from './pages/Projects/Projects'
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Switch>
+        <Route exact path="/projects" component={Projects} />
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/tannerportfolio/projects" component={Projects} />
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 export default App;

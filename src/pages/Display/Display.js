@@ -1,10 +1,10 @@
 import React from 'react';
 import Background from "./Background"
 import "./Display.css"
+import profPic from "../../assets/github-profile-pic.png"
 
 
 function Display() {
-  const profPic = "./assets/github-profile-pic.png"
 
   return (
     <div>
