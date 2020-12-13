@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import BootstrapNavbar from "../../pages/Navbar/Navbar";
 import ProjectItem from "../../components/ProjectItem"
 import "./Projects.css"
 import profPic from "../../assets/github-profile-pic.png"
@@ -15,6 +14,7 @@ import employeeDirStill from "../../assets/EmployeeDir.png"
 import employeeDirMove from "../../assets/EmployeeDir.gif"
 import thinkcakesStill from "../../assets/thinkcakes.png"
 import thinkcakesMove from "../../assets/thinkcakes.gif"
+import Display from "../Display/Display";
 
 
 
@@ -23,6 +23,7 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      gohome: false,
       projects: [
         {
           title: "Out Yonder",
@@ -76,6 +77,7 @@ class Projects extends Component {
 
     };
     this.renderProjects = this.renderProjects.bind(this);
+    this.handleHomeButton = this.handleHomeButton.bind(this);
   }
 
   renderProjects() {
@@ -86,33 +88,40 @@ class Projects extends Component {
     return projects;
       
   }
+
+  handleHomeButton() {
+    this.setState({gohome: true})
+  }
     
 
   
 
   render() {
+    const goHomeValue = this.state.gohome === false ?
+    <div>
+    <div className="projects-pic-container">
+      <img src={profPic} alt="Profile Pic" style = {{padding: "2px", height: "215px", margintop: "10px" }}></img>
+      <div className="display-text">
+      These are my current web applications. Some are finished and some are currently being worked on in my spare time.
+      <button className="homeButton" onClick={this.handleHomeButton}>
+        Home
+      </button>
+    </div>
 
-    return (
-      <div>
-        <BootstrapNavbar />
+    </div>
+    <div className="project-container">
+      <h1 className="projects-display-text" style={{fontStyle: "Italic"}}>Current Projects Finished and in Development</h1>
+      <section className="projects">
+        <ol>
+          {this.renderProjects()}
+        </ol>
+      </section>
+    </div>
+  </div>
+  :
+  <Display />
 
-        <div className="projects-pic-container">
-          <img src={profPic} alt="Profile Pic" style = {{padding: "2px", height: "215px", margintop: "10px" }}></img>
-          <div className="display-text">
-          These are my current web applications. Some are finished and some are currently being worked on in my spare time.
-        </div>
-
-        </div>
-        <div className="project-container">
-          <h1 className="projects-display-text" style={{fontStyle: "Italic"}}>Current Projects Finished and in Development</h1>
-          <section className="projects">
-            <ol>
-              {this.renderProjects()}
-            </ol>
-          </section>
-        </div>
-      </div>
-    )
+  return (goHomeValue)
   }
 }
 

@@ -5,6 +5,7 @@
   border-style: solid;
   float: left;
   margin-top: 0px;
+  position: relative;
 }
 
 .projects-display-text {
@@ -19,4 +20,17 @@
   margin-top: 0px;
   border-style: solid;
   float: right
+}
+
+.homeButton {
+  height: 4%;
+  width: 58%;
+  position: absolute;
+  left: 1%;
+  top: 22%;
+  border-radius: 50%;
+  background-color: aquamarine;
+  color: black;
+  font-family: fantasy;
+  font-weight: bolder;
 }
