@@ -100,7 +100,7 @@ class Projects extends Component {
     const goHomeValue = this.state.gohome === false ?
     <div>
     <div className="projects-pic-container">
-      <img src={profPic} alt="Profile Pic" style = {{padding: "2px", height: "215px", margintop: "10px" }}></img>
+      <img src={profPic} alt="Profile Pic" className="projectResPic"></img>
       <div className="display-text">
       These are my current web applications. Some are finished and some are currently being worked on in my spare time.
       <button className="homeButton" onClick={this.handleHomeButton}>
