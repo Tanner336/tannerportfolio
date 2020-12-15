@@ -24,7 +24,7 @@
 
 .homeButton {
   height: 4%;
-  width: 58%;
+  width: 45%;
   position: absolute;
   left: 1%;
   top: 22%;
@@ -33,11 +33,26 @@
   color: black;
   font-family: fantasy;
   font-weight: bolder;
+  margin-left: 10px;
 }
 
-.projectResPic {
+.projectPic {
   padding-left: 14px;
   padding-top: 8px;
   padding-bottom: 4px;
   height: 215px;
+}
+
+.projResumePic {
+  height: 5%;
+  width: 58%;
+  position: absolute;
+  left: 1%;
+  top: 28%;
+  border-radius: 50%;
+  background-color: aquamarine;
+  color: black;
+  font-family: fantasy;
+  font-weight: bolder;
+  margin-left: 10px;
 }

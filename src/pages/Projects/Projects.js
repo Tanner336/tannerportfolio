@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import ProjectItem from "../../components/ProjectItem"
 import "./Projects.css"
 import profPic from "../../assets/github-profile-pic.png"
+import resumePic from "../../assets/resume-pic.png"
+import resumeLink from "../../assets/TannerResume2020.pdf"
 import outYonderStill from "../../assets/OutYonder.png"
 import outYonderMove from "../../assets/OutYonder.gif"
 import gallivantStill from "../../assets/Gallivant.png"
@@ -100,12 +102,15 @@ class Projects extends Component {
     const goHomeValue = this.state.gohome === false ?
     <div>
     <div className="projects-pic-container">
-      <img src={profPic} alt="Profile Pic" className="projectResPic"></img>
+      <img src={profPic} alt="Profile Pic" className="projectPic"></img>
       <div className="display-text">
       These are my current web applications. Some are finished and some are currently being worked on in my spare time.
       <button className="homeButton" onClick={this.handleHomeButton}>
         Home
       </button>
+      <a href={resumeLink} target="blank">
+        <img className="projResumePic" src={resumePic} alt="resume pic" ></img>
+      </a>
     </div>
 
     </div>
