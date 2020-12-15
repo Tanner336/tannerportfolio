@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Projects from "../Projects/Projects"
-import Footer from "../Footer/Footer";
 
 class NavButton extends Component {
   constructor(props) {
