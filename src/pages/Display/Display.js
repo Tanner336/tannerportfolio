@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Background from "./Background"
 import "./Display.css"
 import profPic from "../../assets/github-profile-pic.png"
-import resumePic from "../../assets/resume-pic.png"
 import Projects from "../Projects/Projects"
 import resumeLink from "../../assets/TannerResume2020.pdf"
 import Footer from "../Footer/Footer";

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ProjectItem from "../../components/ProjectItem"
 import "./Projects.css"
 import profPic from "../../assets/github-profile-pic.png"
-import resumePic from "../../assets/resume-pic.png"
 import resumeLink from "../../assets/TannerResume2020.pdf"
 import outYonderStill from "../../assets/OutYonder.png"
 import outYonderMove from "../../assets/OutYonder.gif"
