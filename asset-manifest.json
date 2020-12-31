@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tannerportfolio/static/css/main.f84aba40.chunk.css",
-    "main.js": "/tannerportfolio/static/js/main.a434a36b.chunk.js",
-    "main.js.map": "/tannerportfolio/static/js/main.a434a36b.chunk.js.map",
+    "main.js": "/tannerportfolio/static/js/main.7ec759cf.chunk.js",
+    "main.js.map": "/tannerportfolio/static/js/main.7ec759cf.chunk.js.map",
     "runtime-main.js": "/tannerportfolio/static/js/runtime-main.35cfaa8f.js",
     "runtime-main.js.map": "/tannerportfolio/static/js/runtime-main.35cfaa8f.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/tannerportfolio/static/css/2.20aa2d7b.chunk.css",
@@ -29,7 +29,6 @@
     "static/media/github.746ec8f0.png": "/tannerportfolio/static/media/github.746ec8f0.png",
     "static/media/gmail.c057771c.png": "/tannerportfolio/static/media/gmail.c057771c.png",
     "static/media/Background.css": "/tannerportfolio/static/media/mountain.7babde8d.png",
-    "static/media/resume-pic.d0990443.png": "/tannerportfolio/static/media/resume-pic.d0990443.png",
     "static/media/thinkcakes.bb841c08.gif": "/tannerportfolio/static/media/thinkcakes.bb841c08.gif",
     "static/media/thinkcakes.e0d53f42.png": "/tannerportfolio/static/media/thinkcakes.e0d53f42.png"
   },
@@ -38,6 +37,6 @@
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.d9084aff.chunk.js",
     "static/css/main.f84aba40.chunk.css",
-    "static/js/main.a434a36b.chunk.js"
+    "static/js/main.7ec759cf.chunk.js"
   ]
 }
