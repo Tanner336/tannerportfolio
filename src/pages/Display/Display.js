@@ -15,38 +15,53 @@ class Display extends Component {
       viewProjects: false
     }
     this.handleProjectsChange = this.handleProjectsChange.bind(this);
+    this.resumeButton = this.resumeButton.bind(this)
 
   }
 
   handleProjectsChange(props) {
-    this.setState({viewProjects: true})
+    this.setState({ viewProjects: true })
+  }
+
+  resumeButton() {
+    const url=resumeLink
+    window.open(url,'_blank')
   }
 
 
   render() {
     const returnValue = this.state.viewProjects === false ?
       <div>
-      <div className="pic-container">
-        <img src={profPic} alt="Profile Pic" className="profPic"></img>
-        <div className="display-text">
-          This website is meant to display my web applications that are finished or I am currently working on to potential employers.
+        <div className="box">
+          <div className="pic-container">
+            <div>
+              <img src={profPic} alt="Profile Pic" className="profPic"></img>
+            </div>
+            <div className="display-text">
+              <p>
+                Full-stack software developer, living out of the research triangle in North Carolina. This portfolio is meant to display some of my favorite projects and applications.
+              </p>
+            </div>
+            <div>
+              <button className="projectsButton" onClick={this.handleProjectsChange}>
+                <p>Projects</p>
+              </button>
+              <button className="resumepic" onClick={this.resumeButton}>
+                <p>Resume</p>
+              </button>
+            </div>
+
+          </div>
+          <Background />
+
+
         </div>
-        <a href={resumeLink} target="blank">
-        <img className="resumepic" src={resumePic} alt="resume pic" ></img>
-        </a>
-        <button className="projectsButton" onClick={this.handleProjectsChange}>
-          View Projects
-        </button>
-
+        <Footer />
       </div>
-      <Background />
-      <Footer />
+      :
+      <Projects />
 
-    </div>
-    :
-    <Projects />
-    
-    return (returnValue)  
+    return (returnValue)
   }
 
 

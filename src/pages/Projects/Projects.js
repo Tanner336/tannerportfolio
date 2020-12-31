@@ -29,7 +29,7 @@ class Projects extends Component {
       projects: [
         {
           title: "Out Yonder",
-          description: "React/Node/Express/Mongodb app made for locating parks across the US and any additional information about them",
+          description: "React/Node/Express/Mongodb app made for locating parks across the US and any additional information about them, including, locations, operating hours, admission fees, etc.",
           url: "https://out-yonder.herokuapp.com/",
           github: "https://github.com/wilsoncollin7/project-3",
           image: outYonderStill,
@@ -80,53 +80,59 @@ class Projects extends Component {
     };
     this.renderProjects = this.renderProjects.bind(this);
     this.handleHomeButton = this.handleHomeButton.bind(this);
+    this.resumeButton = this.resumeButton.bind(this);
   }
 
   renderProjects() {
     const projects = this.state.projects.map((project, index) => {
-      return <ProjectItem project={project} key={index}/>
-        // return <li>{project.title} {index}</li> 
+      return <ProjectItem project={project} key={index} />
+      // return <li>{project.title} {index}</li> 
     })
     return projects;
-      
+
   }
 
   handleHomeButton() {
-    this.setState({gohome: true})
+    this.setState({ gohome: true })
   }
-    
 
-  
+  resumeButton() {
+    const url=resumeLink
+    window.open(url,'_blank')
+  }
+
 
   render() {
     const goHomeValue = this.state.gohome === false ?
-    <div>
-    <div className="projects-pic-container">
-      <img src={profPic} alt="Profile Pic" className="projectPic"></img>
-      <div className="display-text">
-      These are my current web applications. Some are finished and some are currently being worked on in my spare time.
-      <button className="homeButton" onClick={this.handleHomeButton}>
-        Home
-      </button>
-      <a href={resumeLink} target="blank">
-        <img className="projResumePic" src={resumePic} alt="resume pic" ></img>
-      </a>
-    </div>
+      <div>
+        <div className="box">
+          <div className="projects-pic-container">
+            <img src={profPic} alt="Profile Pic" className="projectPic"></img>
+            <div className="display-text">
+              <p>These are my current web applications. Some are finished and some are currently being worked on in my spare time.</p>
+              <button className="homeButton" onClick={this.handleHomeButton}>
+                <p>Home</p>
+              </button>
+              <button className="resumeButton" onClick={this.resumeButton}>
+                <p>Resume</p>
+              </button>
+            </div>
 
-    </div>
-    <div className="project-container">
-      <h1 className="projects-display-text" style={{fontStyle: "Italic"}}>Current Projects Finished and in Development</h1>
-      <section className="projects">
-        <ol>
-          {this.renderProjects()}
-        </ol>
-      </section>
-    </div>
-  </div>
-  :
-  <Display />
+          </div>
+          <div className="project-container">
+            <h1 className="projects-display-text" style={{ fontStyle: "Italic" }}>Current Projects Finished and in Development</h1>
+            <section className="projects">
+              <ol>
+                {this.renderProjects()}
+              </ol>
+            </section>
+          </div>
+        </div>
+      </div>
+      :
+      <Display />
 
-  return (goHomeValue)
+    return (goHomeValue)
   }
 }
 
