@@ -22,7 +22,7 @@ class ProjectItem extends Component {
 
   render() {
     return(
-      <div style={{height: "100%", margin: "5%", backgroundColor: "lightblue", borderStyle: "solid"}}>
+      <div style={{height: "100%", margin: "5%", backgroundColor: "lightblue", borderStyle: "solid", borderWidth: "thick"}}>
         <div>
           <img src={this.state.image} onMouseEnter={this.moveImage} onMouseLeave={this.stillImage} style={{height:"115px", width: "200px", margin: "1%", float:"left"}} alt="project pic"></img>
         </div>

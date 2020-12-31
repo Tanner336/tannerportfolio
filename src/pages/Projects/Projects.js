@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ProjectItem from "../../components/ProjectItem"
 import "./Projects.css"
 import profPic from "../../assets/github-profile-pic.png"
-import resumeLink from "../../assets/TannerResume2020.pdf"
+import resumeLink from "../../assets/TannerCookResume.pdf"
 import outYonderStill from "../../assets/OutYonder.png"
 import outYonderMove from "../../assets/OutYonder.gif"
 import gallivantStill from "../../assets/Gallivant.png"
