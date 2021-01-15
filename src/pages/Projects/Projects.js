@@ -16,7 +16,9 @@ import employeeDirMove from "../../assets/EmployeeDir.gif"
 import thinkcakesStill from "../../assets/thinkcakes.png"
 import thinkcakesMove from "../../assets/thinkcakes.gif"
 import Display from "../Display/Display";
-
+import AboutMe from "../AboutMe/AboutMe";
+import { HomeOutlined } from "@ant-design/icons";
+import { CopyOutlined } from "@ant-design/icons";
 
 
 
@@ -25,6 +27,7 @@ class Projects extends Component {
     super(props);
     this.state = {
       gohome: false,
+      viewAboutMe: false,
       projects: [
         {
           title: "Out Yonder",
@@ -102,7 +105,7 @@ class Projects extends Component {
 
 
   render() {
-    const goHomeValue = this.state.gohome === false ?
+    const goHomeValue = this.state.gohome === false & this.state.viewAboutMe === false ?
       <div>
         <div className="box">
           <div className="projects-pic-container">
@@ -110,9 +113,11 @@ class Projects extends Component {
             <div className="display-text">
               <p>These are my current web applications. Some are finished and some are currently being worked on in my spare time.</p>
               <button className="homeButton" onClick={this.handleHomeButton}>
+                <HomeOutlined />
                 <p>Home</p>
               </button>
               <button className="resumeButton" onClick={this.resumeButton}>
+                <CopyOutlined />
                 <p>Resume</p>
               </button>
             </div>
@@ -128,8 +133,10 @@ class Projects extends Component {
           </div>
         </div>
       </div>
-      :
+      : this.state.gohome === true & this.state.viewAboutMe === false ?
       <Display />
+      :
+      <AboutMe />
 
     return (goHomeValue)
   }
