@@ -17,8 +17,13 @@ import thinkcakesStill from "../../assets/thinkcakes.png"
 import thinkcakesMove from "../../assets/thinkcakes.gif"
 import Display from "../Display/Display";
 import AboutMe from "../AboutMe/AboutMe";
+import githubPic from "../../assets/github.png"
+import linkedInPic from "../../assets/linkedin.png"
+import gmailPic from "../../assets/gmail.png"
 import { HomeOutlined } from "@ant-design/icons";
 import { CopyOutlined } from "@ant-design/icons";
+import { CustomerServiceOutlined } from "@ant-design/icons";
+
 
 
 
@@ -82,6 +87,7 @@ class Projects extends Component {
     };
     this.renderProjects = this.renderProjects.bind(this);
     this.handleHomeButton = this.handleHomeButton.bind(this);
+    this.handleAboutMeChange = this.handleAboutMeChange.bind(this);
     this.resumeButton = this.resumeButton.bind(this);
   }
 
@@ -98,9 +104,14 @@ class Projects extends Component {
     this.setState({ gohome: true })
   }
 
+  handleAboutMeChange() {
+    this.setState({ viewAboutMe: true })
+  }
+
+
   resumeButton() {
-    const url=resumeLink
-    window.open(url,'_blank')
+    const url = resumeLink
+    window.open(url, '_blank')
   }
 
 
@@ -113,15 +124,29 @@ class Projects extends Component {
             <div className="display-text">
               <p>These are my current web applications. Some are finished and some are currently being worked on in my spare time.</p>
               <button className="homeButton" onClick={this.handleHomeButton}>
-                <HomeOutlined />
+                <HomeOutlined className="homeButtonImage" />
                 <p>Home</p>
+              </button>
+              <button className="aboutMeButton" onClick={this.handleAboutMeChange}>
+                <CustomerServiceOutlined />
+                <p>About Me</p>
               </button>
               <button className="resumeButton" onClick={this.resumeButton}>
                 <CopyOutlined />
                 <p>Resume</p>
               </button>
             </div>
-
+            <div>
+              <a href="https://github.com/Tanner336">
+                <img className="githubpic" src={githubPic} alt="github-logo"></img>
+              </a>
+              <a href="https://www.linkedin.com/in/tanner-cook-3b78421ab/">
+                <img className="linkedinpic" src={linkedInPic} alt="linkedIn-logo"></img>
+              </a>
+              <a href="mailto:tannercook336@gmailcom" target="html link">
+                <img className="gmailpic" src={gmailPic} alt="Gmail-logo"></img>
+              </a>
+            </div>
           </div>
           <div className="project-container">
             <h1 className="projects-display-text" style={{ fontStyle: "Italic" }}>Current Projects Finished and in Development</h1>
@@ -133,10 +158,10 @@ class Projects extends Component {
           </div>
         </div>
       </div>
-      : this.state.gohome === true & this.state.viewAboutMe === false ?
-      <Display />
-      :
-      <AboutMe />
+      : this.state.gohome === true ?
+        <Display />
+        :
+        <AboutMe />
 
     return (goHomeValue)
   }

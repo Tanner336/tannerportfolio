@@ -5,7 +5,9 @@ import profPic from "../../assets/github-profile-pic.png";
 import Projects from "../Projects/Projects";
 import AboutMe from "../AboutMe/AboutMe";
 import resumeLink from "../../assets/TannerCookResume.pdf";
-import Footer from "../Footer/Footer";
+import githubPic from "../../assets/github.png"
+import linkedInPic from "../../assets/linkedin.png"
+import gmailPic from "../../assets/gmail.png"
 import { SettingOutlined } from "@ant-design/icons";
 import { CopyOutlined } from "@ant-design/icons";
 import { CustomerServiceOutlined } from "@ant-design/icons";
@@ -33,16 +35,12 @@ class Display extends Component {
   }
 
   resumeButton() {
-    const url=resumeLink
-    window.open(url,'_blank')
+    const url = resumeLink
+    window.open(url, '_blank')
   }
 
 
   render() {
-    console.log(`
-    viewProjects: ${this.state.viewProjects}
-    viewAboutMe: ${this.state.viewAboutMe}
-    `)
     const returnValue = this.state.viewProjects === false & this.state.viewAboutMe === false ?
       <div>
         <div className="box">
@@ -69,16 +67,26 @@ class Display extends Component {
                 <p>Resume</p>
               </button>
             </div>
+            <div>
+              <a href="https://github.com/Tanner336">
+                <img className="githubpic" src={githubPic} alt="github-logo"></img>
+              </a>
+              <a href="https://www.linkedin.com/in/tanner-cook-3b78421ab/">
+                <img className="linkedinpic" src={linkedInPic} alt="linkedIn-logo"></img>
+              </a>
+              <a href="mailto:tannercook336@gmailcom" target="html link">
+                <img className="gmailpic" src={gmailPic} alt="Gmail-logo"></img>
+              </a>
+            </div>
 
           </div>
           <Background />
         </div>
-        <Footer />
       </div>
       : this.state.viewProjects === true ?
-      <Projects /> 
-      :
-      <AboutMe />
+        <Projects />
+        :
+        <AboutMe />
 
     return (returnValue)
   }

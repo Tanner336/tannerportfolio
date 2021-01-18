@@ -7,7 +7,7 @@
 }
 
 .pic-container {
-  background-color:rgb(10, 10, 66);
+  background-color:rgb(52, 52, 66);
   height: 100vh;
   width: 250px;
   border-style: solid;
@@ -40,11 +40,15 @@
   margin-bottom: 5px;
 }
 
-.resumepic:hover {
-  height: 80px;
-  width: 120px;
-  animation-name: move;
-  animation-duration: 2s;
+.resumepic:hover svg {
+  animation-name: slowspin;
+  animation-duration: 6s;
+  font-size: 16px;
+}
+
+@keyframes slowspin {
+  0% {transform: rotate(0deg); font-size: 16px;}
+  100% {transform: rotate(360deg); font-size: 25px;}
 }
 
 .projectsButton {
@@ -58,19 +62,6 @@
   display: block;
   margin-bottom: 5px;
 }
- 
-.projectsButton:hover {
-  height: 80px;
-  width: 120px;
-  animation-name: move;
-  animation-duration: 2s; 
-}
-
-@keyframes move {
-  0% {height: 55px; width: 100px;}
-  100% {height: 80px; width: 120px;}
-}
-
 
 .projectsButton:hover svg {
   animation-name: spin;
@@ -94,13 +85,6 @@
   margin: auto;
   display: block;
   margin-bottom: 5px;
-}
-
-.aboutMeButton:hover {
-  height: 80px;
-  width: 120px;
-  animation-name: move;
-  animation-duration: 2s; 
 }
 
 .aboutMeButton:hover svg {
@@ -130,6 +114,27 @@
   height: 215px;
   margin: auto;
   display: block;
+}
+
+.githubpic {
+  height: 10%;
+  width: 18%;
+  margin-left: 40px;
+  margin-top: 5%;
+}
+
+.linkedinpic {
+  height: 10%;
+  width: 18%;
+  margin-left: 17px;
+  margin-top: 5%;
+}
+
+.gmailpic {
+  height: 10%;
+  width: 18%;
+  margin-left: 17px;
+  margin-top: 5%;
 }
 
 @media only screen and (max-width: 426px) {
