@@ -1,7 +1,7 @@
 .background-container {
   margin: 0px;
   margin-top: 0px;
-  background-image: url(./mountain.png);
+  background-image: url(../../assets/mountain.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

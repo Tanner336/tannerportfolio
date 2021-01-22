@@ -17,9 +17,12 @@ import thinkcakesStill from "../../assets/thinkcakes.png"
 import thinkcakesMove from "../../assets/thinkcakes.gif"
 import Display from "../Display/Display";
 import AboutMe from "../AboutMe/AboutMe";
-import githubPic from "../../assets/github.png"
-import linkedInPic from "../../assets/linkedin.png"
-import gmailPic from "../../assets/gmail.png"
+import githubPic from "../../assets/github.png";
+import githubPicWhite from "../../assets/github-white.png";
+import linkedInPic from "../../assets/linkedin.png";
+import linkedInPicWhite from "../../assets/linkedin-white.png";
+import gmailPic from "../../assets/gmail.png";
+import gmailPicWhite from "../../assets/gmail-white.png";
 import { HomeOutlined } from "@ant-design/icons";
 import { CopyOutlined } from "@ant-design/icons";
 import { CustomerServiceOutlined } from "@ant-design/icons";
@@ -94,7 +97,6 @@ class Projects extends Component {
   renderProjects() {
     const projects = this.state.projects.map((project, index) => {
       return <ProjectItem project={project} key={index} />
-      // return <li>{project.title} {index}</li> 
     })
     return projects;
 
@@ -138,13 +140,13 @@ class Projects extends Component {
             </div>
             <div>
               <a href="https://github.com/Tanner336">
-                <img className="githubpic" src={githubPic} alt="github-logo"></img>
+                <img className="githubpic" src={githubPic} alt="github-logo" onMouseOver={e => e.currentTarget.src = githubPicWhite} onMouseOut={e => e.currentTarget.src = githubPic}></img>
               </a>
               <a href="https://www.linkedin.com/in/tanner-cook-3b78421ab/">
-                <img className="linkedinpic" src={linkedInPic} alt="linkedIn-logo"></img>
+                <img className="linkedinpic" src={linkedInPic} alt="linkedIn-logo" onMouseOver={e => e.currentTarget.src = linkedInPicWhite} onMouseOut={e => e.currentTarget.src = linkedInPic}></img>
               </a>
               <a href="mailto:tannercook336@gmailcom" target="html link">
-                <img className="gmailpic" src={gmailPic} alt="Gmail-logo"></img>
+                <img className="gmailpic" src={gmailPic} alt="Gmail-logo" onMouseOver={e => e.currentTarget.src = gmailPicWhite} onMouseOut={e => e.currentTarget.src = gmailPic}></img>
               </a>
             </div>
           </div>

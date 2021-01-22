@@ -33,6 +33,7 @@
 
 .project-container {
   background-color:rgb(52, 52, 66);
+  background-image: url(../../assets/mountain.png);
   background-size: cover;
   flex-grow: 10;
   height: 100%;
@@ -41,6 +42,18 @@
   float: right;
   order: 3;
 }
+
+.projectCard {
+  height: 100%; 
+  margin: 5%; 
+  background-color: lightblue; 
+  border-style: solid; 
+  border-width: thick
+}
+
+.projectCard:hover {
+  background-color: rgb(99, 188, 218);
+} 
 
 .projectPic {
   padding-left: 14px;
