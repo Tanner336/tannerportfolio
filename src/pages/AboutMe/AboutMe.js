@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Projects from "../Projects/Projects";
 import Display from "../Display/Display";
 import profPic from "../../assets/github-profile-pic.png";
@@ -9,6 +9,11 @@ import linkedInPic from "../../assets/linkedin.png";
 import linkedInPicWhite from "../../assets/linkedin-white.png";
 import gmailPic from "../../assets/gmail.png";
 import gmailPicWhite from "../../assets/gmail-white.png";
+import codingPic from "../../assets/coding-pic.png";
+import DnDpic from "../../assets/DnD-pic.png";
+import gamingPic from "../../assets/gaming-pic.png";
+import readingPic from "../../assets/reading-pic.png";
+import sportsPic from "../../assets/sports-pic.png";
 import { SettingOutlined } from "@ant-design/icons";
 import { CopyOutlined } from "@ant-design/icons";
 import { HomeOutlined } from "@ant-design/icons";
@@ -29,31 +34,31 @@ class AboutMe extends Component {
           hobby: "Coding",
           description: "I took the UNC Coding Bootcamp last year in 2020 and found a passion for prohramming. If the course taught me anything it is that I have so much mroe to learn, and that has sparked a passion to learn and discover all there is to know. I have a long way to go before I am considered an expert by any means, but I am trying to at least get past a novice.",
           quote: '"I am not a great programmer; I am just a good programmer with great habits." - Kent Beck',
-          picture: githubPic
+          picture: codingPic
         },
         {
           hobby: "Reading",
           description: "Reading was a recently discovered passion for me. I used to only read in school and only when it was assigned to me. It wasn't until College and after that I found books can be entertaining and amazing. I mainly focus on Fantasy, fiction, and the occasional mystery.",
           quote: '"Reading makes immigrants of us all. It takes us away from home, but more important, it finds homes for us everywhere." - Jean Rhys',
-          picture: gmailPic,
+          picture: readingPic,
         },
         {
           hobby: "Video Games",
           description: "A dream of mine has always been to work with video games in some aspect, either professionally or as a hobby. The endless hours of entertainment they have given me throughout my life drives me to want to instil that same joy I felt as a kid, and admittedly still feel now sometimes, in others.",
           quote: '"I burned through all my extra lives in a matter of minutes, and my two least-favorite words appeared on the screen: GAME OVER." - Ernest Cline',
-          picture: linkedInPic,
+          picture: gamingPic,
         },
         {
           hobby: "Sports",
           description: "Sports has been a part of my life since I was a child, and was further nurtured when I went to UNC-Chapel Hill for undergrad. There is something beautiful about stepping into the arena, hearing the crowd roar, and cheering for your team (Tarheels all day). Tennis has been my sport of choice for as long as I can remember, but the best sport to watch in my opinion is basketball.",
           quote: '"I have failed over and over again in my life. And that is why I succeed." - Michael Jordan',
-          picture: githubPic,
+          picture: sportsPic,
         },
         {
           hobby: "Dungeons and Dragons",
-          description: "I didn't discover this hobby until after College, but since I sunk my teeth into it I have been hooked. It is a great team-building experience that promotes creative thinking and problem solving. It's also insanely fun!",
+          description: "I didn't discover this hobby until after college, but since I sunk my teeth into it I have been hooked. It is a great team-building experience that promotes creative thinking and problem solving. It's also insanely fun!",
           quote: '"Basically, we told a fantasy epic, akin to Lord of the Rings, that is entirely our own and exists only in our minds...It was a very very important story that was told only for the 6 people that were in our group." - Thomas Middleditch',
-          picture: linkedInPic,
+          picture: DnDpic,
         },
 
       ]

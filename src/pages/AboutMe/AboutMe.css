@@ -37,7 +37,7 @@
 .picContainerAboutMe {
   background-color:rgb(52, 52, 66);
   height: 100vh;
-  width: 250px;
+  width: 300px;
   border-style: solid;
   float: left;
   margin-top: 0px;
@@ -68,12 +68,17 @@
   left: 12%;
   top: 5%;
   text-align: center;
+  text-decoration: underline;
 
 }
 
 .slidePicture {
-  padding: 5%;
-  opacity: .7;
+  padding: 6%;
+  opacity: .6;
+  height: 500px;
+  width: 700px;
+  position: absolute;
+  top: 10%;
 }
 
 .slideDescription {
@@ -82,7 +87,7 @@
   height: 100px;
   width: 500px;
   left: 12%;
-  top: 18%;
+  top: 20%;
   text-align: center;
 }
 
@@ -93,7 +98,7 @@
   height: 100px;
   width: 500px;
   left: 12%;
-  top: 50%;
+  top: 54%;
   font-style: italic;
 }
 

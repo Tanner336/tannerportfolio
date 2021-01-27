@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ProjectItem from "../../components/ProjectItem"
 import "./Projects.css"
+import "../Display/Display.css"
 import profPic from "../../assets/github-profile-pic.png"
 import resumeLink from "../../assets/TannerCookResume.pdf"
 import outYonderStill from "../../assets/OutYonder.png"
@@ -121,7 +122,7 @@ class Projects extends Component {
     const goHomeValue = this.state.gohome === false & this.state.viewAboutMe === false ?
       <div>
         <div className="box">
-          <div className="projects-pic-container">
+          <div className="project-pic-container">
             <img src={profPic} alt="Profile Pic" className="projectPic"></img>
             <div className="display-text">
               <p>These are my current web applications. Some are finished and some are currently being worked on in my spare time.</p>
@@ -140,7 +141,7 @@ class Projects extends Component {
             </div>
             <div>
               <a href="https://github.com/Tanner336">
-                <img className="githubpic" src={githubPic} alt="github-logo" onMouseOver={e => e.currentTarget.src = githubPicWhite} onMouseOut={e => e.currentTarget.src = githubPic}></img>
+                <img className="githubpic" style={{marginLeft: "25px"}} src={githubPic} alt="github-logo" onMouseOver={e => e.currentTarget.src = githubPicWhite} onMouseOut={e => e.currentTarget.src = githubPic}></img>
               </a>
               <a href="https://www.linkedin.com/in/tanner-cook-3b78421ab/">
                 <img className="linkedinpic" src={linkedInPic} alt="linkedIn-logo" onMouseOver={e => e.currentTarget.src = linkedInPicWhite} onMouseOut={e => e.currentTarget.src = linkedInPic}></img>
