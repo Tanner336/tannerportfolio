@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tannerportfolio/static/css/main.84186cfb.chunk.css",
-    "main.js": "/tannerportfolio/static/js/main.6d2c3541.chunk.js",
-    "main.js.map": "/tannerportfolio/static/js/main.6d2c3541.chunk.js.map",
+    "main.css": "/tannerportfolio/static/css/main.44079a85.chunk.css",
+    "main.js": "/tannerportfolio/static/js/main.78e68961.chunk.js",
+    "main.js.map": "/tannerportfolio/static/js/main.78e68961.chunk.js.map",
     "runtime-main.js": "/tannerportfolio/static/js/runtime-main.b1b14451.js",
     "runtime-main.js.map": "/tannerportfolio/static/js/runtime-main.b1b14451.js.map",
     "static/css/2.3808adac.chunk.css": "/tannerportfolio/static/css/2.3808adac.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.78ccb7c4.chunk.js.map": "/tannerportfolio/static/js/3.78ccb7c4.chunk.js.map",
     "index.html": "/tannerportfolio/index.html",
     "static/css/2.3808adac.chunk.css.map": "/tannerportfolio/static/css/2.3808adac.chunk.css.map",
-    "static/css/main.84186cfb.chunk.css.map": "/tannerportfolio/static/css/main.84186cfb.chunk.css.map",
+    "static/css/main.44079a85.chunk.css.map": "/tannerportfolio/static/css/main.44079a85.chunk.css.map",
     "static/js/2.ebb8d5fb.chunk.js.LICENSE.txt": "/tannerportfolio/static/js/2.ebb8d5fb.chunk.js.LICENSE.txt",
     "static/media/DnD-pic.92f67b56.png": "/tannerportfolio/static/media/DnD-pic.92f67b56.png",
     "static/media/EmployeeDir.005bd2a8.png": "/tannerportfolio/static/media/EmployeeDir.005bd2a8.png",
@@ -35,15 +35,13 @@
     "static/media/linkedin.d67e7b78.png": "/tannerportfolio/static/media/linkedin.d67e7b78.png",
     "static/media/Background.css": "/tannerportfolio/static/media/mountain.7babde8d.png",
     "static/media/reading-pic.d722cc8e.png": "/tannerportfolio/static/media/reading-pic.d722cc8e.png",
-    "static/media/sports-pic.890be4c4.png": "/tannerportfolio/static/media/sports-pic.890be4c4.png",
-    "static/media/thinkcakes.bb841c08.gif": "/tannerportfolio/static/media/thinkcakes.bb841c08.gif",
-    "static/media/thinkcakes.e0d53f42.png": "/tannerportfolio/static/media/thinkcakes.e0d53f42.png"
+    "static/media/sports-pic.890be4c4.png": "/tannerportfolio/static/media/sports-pic.890be4c4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b1b14451.js",
     "static/css/2.3808adac.chunk.css",
     "static/js/2.ebb8d5fb.chunk.js",
-    "static/css/main.84186cfb.chunk.css",
-    "static/js/main.6d2c3541.chunk.js"
+    "static/css/main.44079a85.chunk.css",
+    "static/js/main.78e68961.chunk.js"
   ]
 }
