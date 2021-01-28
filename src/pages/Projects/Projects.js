@@ -14,8 +14,6 @@ import dayplannerStill from "../../assets/dayplanner.png"
 import dayplannerMove from "../../assets/dayplanner.gif"
 import employeeDirStill from "../../assets/EmployeeDir.png"
 import employeeDirMove from "../../assets/EmployeeDir.gif"
-import thinkcakesStill from "../../assets/thinkcakes.png"
-import thinkcakesMove from "../../assets/thinkcakes.gif"
 import Display from "../Display/Display";
 import AboutMe from "../AboutMe/AboutMe";
 import githubPic from "../../assets/github.png";
@@ -40,7 +38,7 @@ class Projects extends Component {
       projects: [
         {
           title: "Out Yonder",
-          description: "React/Node/Express/Mongodb app made for locating parks across the US and any additional information about them, including, locations, operating hours, admission fees, etc.",
+          description: "React/Node/Express/Mongodb app made for locating parks across the US and any additional information about them, including locations, operating hours, admission fees, etc.",
           url: "https://out-yonder.herokuapp.com/",
           github: "https://github.com/wilsoncollin7/project-3",
           image: outYonderStill,
@@ -48,7 +46,7 @@ class Projects extends Component {
         },
         {
           title: "Gallivant",
-          description: "JS/JQuery/Node/HTML/CSS Web application that helps plan and display travel details, such as flight times, weatther info for the destination, and points of interest.",
+          description: "JS/JQuery/Node/HTML/CSS Web application that helps plan and display travel details such as flight times, weather info for the destination, and points of interest.",
           url: "https://wasteofadrumbum.github.io/Gallivant/",
           github: "https://github.com/WasteOfADrumBum/Gallivant",
           image: gallivantStill,
@@ -56,7 +54,7 @@ class Projects extends Component {
         },
         {
           title: "Code Quiz",
-          description: "The 'Code' Quiz is a fun web game that asks the user simple random coding questions and challenges them to get the highest score in the alloted time",
+          description: "The 'Code' Quiz is a fun web game that asks the user simple random coding questions and challenges them to get the highest score in the alloted time.",
           url: "https://tanner336.github.io/CodeQuiz/",
           github: "https://github.com/Tanner336/CodeQuiz",
           image: codeQuizStill,
@@ -72,20 +70,12 @@ class Projects extends Component {
         },
         {
           title: "Employee Directory",
-          description: "React/JQuery/JS simple web application that allows the user to enter employee information and is then saved and displayed on a table.",
+          description: "React/JQuery/JS simple web application that allows the user to enter employee information and is then saved and displayed on a table. It also allows you to sort through those employees.",
           url: "https://tanner336.github.io/React-Employee-Dir/",
           github: "https://github.com/Tanner336/React-Employee-Dir",
           image: employeeDirStill,
           movingImage: employeeDirMove
         },
-        {
-          title: "ThinkCakes",
-          description: "*This project is still in development*  This is a JS/JQuery/SQL/Node/handlebars app that makes a user account and saves users favorite cake recipes. It allows them to upload their own recipes, as well as rate and comment on other users recipes.",
-          url: "",
-          github: "https://github.com/arodrigu1/Project2",
-          image: thinkcakesStill,
-          movingImage: thinkcakesMove
-        }
       ]
 
     };
@@ -125,7 +115,7 @@ class Projects extends Component {
           <div className="project-pic-container">
             <img src={profPic} alt="Profile Pic" className="projectPic"></img>
             <div className="display-text">
-              <p>These are my current web applications. Some are finished and some are currently being worked on in my spare time.</p>
+              <p>These are my current web applications. Showcasing my proficiencies in HTML, CSS, Node.js, JavaScript, and React.js.</p>
               <button className="homeButton" onClick={this.handleHomeButton}>
                 <HomeOutlined className="homeButtonImage" />
                 <p>Home</p>

@@ -32,7 +32,7 @@ class AboutMe extends Component {
       slides: [
         {
           hobby: "Coding",
-          description: "I took the UNC Coding Bootcamp last year in 2020 and found a passion for prohramming. If the course taught me anything it is that I have so much mroe to learn, and that has sparked a passion to learn and discover all there is to know. I have a long way to go before I am considered an expert by any means, but I am trying to at least get past a novice.",
+          description: "I took the UNC Coding Bootcamp last year in 2020 and found a passion for programming. If the course taught me anything it is that I have so much mroe to learn, and that has sparked a passion to learn and discover all there is to know. I have a long way to go before I am considered an expert by any means, but I am trying to at least get past a novice.",
           quote: '"I am not a great programmer; I am just a good programmer with great habits." - Kent Beck',
           picture: codingPic
         },
@@ -68,6 +68,7 @@ class AboutMe extends Component {
     this.handleHomeButton = this.handleHomeButton.bind(this);
     this.handleProjectsChange = this.handleProjectsChange.bind(this);
     this.resumeButton = this.resumeButton.bind(this);
+    // this.displayText = this.displayText.bind(this);
     // this.renderSlides = this.renderSlides.bind(this);
 
 
@@ -86,6 +87,11 @@ class AboutMe extends Component {
     window.open(url, '_blank')
   }
 
+  // displayText() {
+  //   this.setState({ description: quote })
+  // }
+
+
   // renderSlides() {
   //   const hobbySlides = this.state.slides.map((slides, index) => {
   //     return <MyCarousel slides={slides} key={index} />
@@ -95,6 +101,7 @@ class AboutMe extends Component {
 
 
   render() {
+    console.log(this.state.slides)
     const aboutMeValue = this.state.gohome === false & this.state.viewProjects === false ?
       <div>
         <div className="aboutMeBox">
@@ -104,7 +111,7 @@ class AboutMe extends Component {
             </div>
             <div className="display-text">
               <p>
-                This section is meant to display some of my hobbies, interests, and passions
+                This section is meant to display some of my hobbies, interests, and passions. Be sure to hover over the bottom of the pictures for some of my favorite quotes!
               </p>
             </div>
             <button className="homeButtonAbout" onClick={this.handleHomeButton}>
@@ -160,12 +167,13 @@ class AboutMe extends Component {
             }}
           >
             {this.state.slides.map((slide, index) => {
-              return (<div className="backgroundAboutMe">
-                <h1 className="slideTitle">{slide.hobby}</h1>
-                <img className="slidePicture" alt="hobbypicPlaceholder" src={slide.picture} />
-                <p className="slideDescription">{slide.description}</p>
-                <p className="slideQuote">{slide.quote}</p>
-              </div>);
+              return (
+                <div className="backgroundAboutMe">
+                  <h1 className="slideTitle">{slide.hobby}</h1>
+                  <img className="slidePicture" alt="hobbypicPlaceholder" src={slide.picture} />
+                  <p className="slideDescription">{slide.description}</p>
+                  <p className="slideQuote">{slide.quote}</p>
+                </div>);
             })}
 
 
@@ -197,7 +205,7 @@ class AboutMe extends Component {
           </Carousel>
 
         </div>
-      </div>
+      </div >
       : this.state.viewProjects === true ?
         <Projects />
         :
