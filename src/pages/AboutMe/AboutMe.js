@@ -14,6 +14,7 @@ import DnDpic from "../../assets/DnD-pic.png";
 import gamingPic from "../../assets/gaming-pic.png";
 import readingPic from "../../assets/reading-pic.png";
 import sportsPic from "../../assets/sports-pic.png";
+import professionalCodePic from "../../assets/professionalcode-pic.png";
 import { SettingOutlined } from "@ant-design/icons";
 import { CopyOutlined } from "@ant-design/icons";
 import { HomeOutlined } from "@ant-design/icons";
@@ -31,8 +32,13 @@ class AboutMe extends Component {
       viewProjects: false,
       slides: [
         {
+          hobby: "Professional Skills",
+          description: "Professional skills include, React.js, JavaScript, CSS, jQuery, Bootstrap, Node.js, and HTML. Junior Front End Developer aiming to build applications that can benefit people, make processes easier, use innovative technologies, and just make amazing implements on the web. I am a recent graduate of the University of Chapel Hill Full-Stack Web Development Coding Bootcamp, specializing in JavaScript, CSS, and React.js. My roles as both a leader and a team player make me an excellent addition to any professional group, as I am able to work reliably as a team player and tenaciously on my own. I have spent the better part of a year trying to master programming and I still have a lot to learn, but my dedication to my craft, as well as my determination to excel in my career make me a hard-working, and invaluable employee.",
+          picture: professionalCodePic
+        },
+        {
           hobby: "Coding",
-          description: "I took the UNC Coding Bootcamp last year in 2020 and found a passion for programming. If the course taught me anything it is that I have so much mroe to learn, and that has sparked a passion to learn and discover all there is to know. I have a long way to go before I am considered an expert by any means, but I am trying to at least get past a novice.",
+          description: "I took the UNC Coding Bootcamp last year in 2020 and found a passion for programming. If the course taught me anything it is that I have so much mroe to learn, and that has sparked a passion to learn and discover all there is to know. I have a long way to go before I am considered an expert by any means, but I am trying to at least get past a novice. Professional skills include, React.js, JavaScript, CSS, jQuery, Bootstrap, Node.js, and HTML",
           quote: '"I am not a great programmer; I am just a good programmer with great habits." - Kent Beck',
           picture: codingPic
         },
