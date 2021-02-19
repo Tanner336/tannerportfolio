@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tannerportfolio/static/css/main.44079a85.chunk.css",
-    "main.js": "/tannerportfolio/static/js/main.78e68961.chunk.js",
-    "main.js.map": "/tannerportfolio/static/js/main.78e68961.chunk.js.map",
+    "main.js": "/tannerportfolio/static/js/main.e96b1ea9.chunk.js",
+    "main.js.map": "/tannerportfolio/static/js/main.e96b1ea9.chunk.js.map",
     "runtime-main.js": "/tannerportfolio/static/js/runtime-main.b1b14451.js",
     "runtime-main.js.map": "/tannerportfolio/static/js/runtime-main.b1b14451.js.map",
     "static/css/2.3808adac.chunk.css": "/tannerportfolio/static/css/2.3808adac.chunk.css",
@@ -34,6 +34,7 @@
     "static/media/github.96997ac2.png": "/tannerportfolio/static/media/github.96997ac2.png",
     "static/media/linkedin.d67e7b78.png": "/tannerportfolio/static/media/linkedin.d67e7b78.png",
     "static/media/Background.css": "/tannerportfolio/static/media/mountain.7babde8d.png",
+    "static/media/professionalcode-pic.12cbcb58.png": "/tannerportfolio/static/media/professionalcode-pic.12cbcb58.png",
     "static/media/reading-pic.d722cc8e.png": "/tannerportfolio/static/media/reading-pic.d722cc8e.png",
     "static/media/sports-pic.890be4c4.png": "/tannerportfolio/static/media/sports-pic.890be4c4.png"
   },
@@ -42,6 +43,6 @@
     "static/css/2.3808adac.chunk.css",
     "static/js/2.ebb8d5fb.chunk.js",
     "static/css/main.44079a85.chunk.css",
-    "static/js/main.78e68961.chunk.js"
+    "static/js/main.e96b1ea9.chunk.js"
   ]
 }
